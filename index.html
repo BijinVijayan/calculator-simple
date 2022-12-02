@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Neumorphism calculator design</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="container">
+    <div class="result">
+      <input type="text" id="results">
+    </div>
+
+
+    <div class="buttons">
+      <div class="button action-btn" id="clear" onclick="allClear()"> AC </div>
+      <div class="button action-btn" id="delete" onclick="remove()">&#9003</div>
+      <div class="button num-button" id="perc" onclick="display('%')"> %</div>
+      <div class="button num-button" id="divide" onclick="display('/')"> /</div>
+      <div class="button num-button" id="seven" onclick="display('7')">7</div>
+      <div class="button num-button" id="eight" onclick="display('8')">8</div>
+      <div class="button num-button" id="nine" onclick="display('9')">9</div>
+      <div class="button num-button" id="multi" onclick="display('*')">*</div>
+      <div class="button num-button  four" id="four" onclick="display('4')">4</div>
+      <div class="button num-button" id="five" onclick="display('5')">5</div>
+      <div class="button num-button" id="six" onclick="display('6')">6</div>
+      <div class="button num-button" id="sub" onclick="display('-')">-</div>
+      <div class="button num-button" id="one" onclick="display('1')">1</div>
+      <div class="button num-button" id="two" onclick="display('2')">2</div>
+      <div class="button num-button" id="three" onclick="display('3')">3</div>
+      <div class="button num-button" id="add" onclick="display('+')">+</div>
+      <div class="button num-button" id="zero" onclick="display('0')">0</div>
+      <div class="button num-button" id="dot" onclick="display('.')">.</div>
+      <div class="button calc-action-btn" id="equal" onclick="equal()">=</div>
+    </div>
+
+  </div>
+  <!-- partial -->
+  <script src="./calc.js"></script>
+
+</body>
+
+</html>

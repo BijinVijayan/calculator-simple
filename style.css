@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+  background-color: rgb(42, 40, 40);
+  font-family: 'Montserrat', sans-serif;
+  
+
+}
+.container {
+  background: #EEEEEE;
+  width: 320px;
+  height: 500px;
+  border-radius: .5em;
+  box-shadow: 4px 4px 10px 0 rgba(0,0,2,.3);
+  margin: 20px auto;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.container .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
+.container .buttons .button, .container .buttons .num-button  {
+  cursor: grab;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  box-shadow: 6px 6px 16px 0 rgba(173, 169, 165, 0.5),
+    -6px -6px 16px 0 rgba(255, 255, 255, .5);
+}
+
+/*  UTILITIES*/
+#zero {
+  grid-column: 1/ 3;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow:  6px 6px 16px 0 rgba(188, 185, 181, 0.5),
+  -6px -6px 16px 0 rgba(255, 255, 255, .5);
+}
+.action-btn {
+  color: rgb(216, 32, 32);
+  font-weight: bold;
+}
+.calc-action-btn{
+  color: orange;
+  font-weight: bold;
+}
+
+#results{
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+}
